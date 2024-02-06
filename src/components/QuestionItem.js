@@ -4,7 +4,10 @@ function QuestionItem({ question }) {
   const { id, prompt, answers, correctIndex } = question;
 
   const options = answers.map((answer, index) => (
-    <option key={index} value={index}>
+    <option 
+      key={index} 
+      value={index}
+    >
       {answer}
     </option>
   ));
